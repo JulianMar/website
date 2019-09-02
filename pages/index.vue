@@ -1,10 +1,12 @@
 <template>
   <div class="h-screen flex justify-center items-center bg-yellow-300">
-    <div class="w-full flex justify-center" @click="turnCard()">
-      <title-card v-if="titleCard" />
-      <transition name="fade">
-        <backside-card v-if="!titleCard" />
-      </transition>
+    <div
+      class="w-1/2 h-100 relative wrapper"
+      :class="{ back: !titleCard }"
+      @click="turnCard()"
+    >
+      <title-card class="card" />
+      <backside-card class="card back" />
     </div>
   </div>
 </template>
@@ -40,5 +42,22 @@ export default {
 
 a {
   font-weight: 800;
+}
+
+.wrapper {
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
 }
 </style>
