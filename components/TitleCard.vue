@@ -3,11 +3,11 @@
     class="flex flex-col bg-white background rounded-lg shadow-2xl md:flex-row"
   >
     <img
-      class="rounded-full mx-auto w-1/2 mt-4 md:rounded-l-lg md:rounded-r-none md:m-0 md:w-5/12"
+      class="rounded-full mx-auto w-1/2 mt-4 md:rounded-l-lg md:rounded-r-none md:m-0 md:w-4/12"
       src="/me.jpg"
     />
 
-    <div class="md:mt-4">
+    <div>
       <div class="mt-4 mb-2 mx-4 text-center md">
         <p class="text-4xl">Hi! I am Julian</p>
 
@@ -16,7 +16,9 @@
         <p class="text-xl">Full-Stack Developer</p>
       </div>
 
-      <div class="mt-2 mx-4 mb-4 md:mt-4 md:flex md:flex-wrap">
+      <div
+        class="mt-2 mx-4 mb-4 md:mt-4 md:flex md:flex-wrap md:justify-center"
+      >
         <Tag
           v-for="(item, index) in items"
           :key="index"
@@ -24,10 +26,10 @@
           :description="item.description"
           :link="item.link"
           :alt="item.alt"
-          class="md:w-1/2"
+          class="md:w-1/2 md:mx-auto"
         ></Tag>
 
-        <p class=" text-purple-800 text-lg mt-4 text-center">
+        <p class=" text-purple-800 text-lg mt-4 text-center w-full">
           Every error is a opportunity to learn something new
         </p>
       </div>
