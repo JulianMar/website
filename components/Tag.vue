@@ -6,8 +6,9 @@
       :href="link"
       :class="{ 'font-normal': linkSet }"
       class="ml-4"
-      >{{ description }}</component
     >
+      {{ description }}
+    </component>
   </div>
 </template>
 

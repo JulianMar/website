@@ -4,7 +4,9 @@
   >
     <img
       class="rounded-full mx-auto w-1/2 mt-4 md:rounded-l-lg md:rounded-r-none md:m-0 md:w-4/12"
-      src="/me.jpg"
+      src="~/assets/img/me.jpg"
+      alt="picture of me"
+      rel="preload"
     />
 
     <div>

@@ -1,3 +1,5 @@
+import * as fs from 'fs'
+
 export default {
   mode: 'universal',
   /*
@@ -58,5 +60,25 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+
+  render: {
+    http2: {
+      push: true,
+      pushAssets: (req, res, publicPath, preloadFiles) => {
+        const files = preloadFiles.map(
+          (f) => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`
+        )
+
+        files.push(`<${publicPath}assets/img/me.jpg>; rel=preload; as=image`)
+
+        const staticFiles = fs
+          .readdirSync('static')
+          .filter((f) => f.endsWith('.svg'))
+          .map((f) => `<${f}>; rel=preload; as=image`)
+
+        return [...files, ...staticFiles]
+      }
+    }
   }
 }
