@@ -1,7 +1,6 @@
 <template>
-  <a href="https://github.com/JulianMar">
+  <a href="https://github.com/JulianMar" aria-label="link to github">
     <svg
-      id="Capa_1"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"

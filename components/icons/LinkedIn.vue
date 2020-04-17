@@ -1,7 +1,9 @@
 <template>
-  <a href="https://www.linkedin.com/in/julian-martin-5036b4180">
+  <a
+    href="https://www.linkedin.com/in/julian-martin-5036b4180"
+    aria-label="link to linkedin"
+  >
     <svg
-      id="Capa_1"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"

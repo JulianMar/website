@@ -1,10 +1,10 @@
 <template>
-  <div
+  <main
     class="flex flex-col bg-white background rounded-lg shadow-2xl md:flex-row"
   >
     <img
       class="rounded-full mx-auto w-1/2 mt-4 md:rounded-l-lg md:rounded-r-none md:m-0 md:w-4/12"
-      src="~/assets/img/me.jpg"
+      src="~/assets/img/me_small.jpg"
       alt="picture of me"
       rel="preload"
     />
@@ -36,7 +36,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

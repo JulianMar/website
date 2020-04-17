@@ -70,7 +70,9 @@ export default {
           (f) => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`
         )
 
-        files.push(`<${publicPath}assets/img/me.jpg>; rel=preload; as=image`)
+        files.push(
+          `<${publicPath}assets/img/me_small.jpg>; rel=preload; as=image`
+        )
 
         const staticFiles = fs
           .readdirSync('static')

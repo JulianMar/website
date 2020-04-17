@@ -1,7 +1,6 @@
 <template>
-  <a href="https://www.last.fm/user/julianmarti96n ">
+  <a href="https://www.last.fm/user/julianmarti96n" aria-label="link to github">
     <svg
-      id="Capa_1"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
