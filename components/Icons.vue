@@ -51,8 +51,8 @@ export default {
   components: {
     Github,
     LinkedIn,
-    Lastfm
-  }
+    Lastfm,
+  },
 }
 </script>
 

@@ -36,8 +36,8 @@ export default {
   methods: {
     turnCard() {
       this.$router.push('/')
-    }
-  }
+    },
+  },
 }
 </script>
 

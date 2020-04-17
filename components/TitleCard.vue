@@ -31,7 +31,7 @@
           class="md:w-1/2 md:mx-auto"
         ></Tag>
 
-        <p class=" text-purple-800 text-lg mt-4 text-center w-full">
+        <p class="text-purple-800 text-lg mt-4 text-center w-full">
           Every error is a opportunity to learn something new
         </p>
       </div>
@@ -44,7 +44,7 @@ import Tag from './Tag'
 
 export default {
   components: {
-    Tag
+    Tag,
   },
 
   data: () => ({
@@ -53,39 +53,39 @@ export default {
         icon: '/icon-location-pin.svg',
         description: 'Vorarlberg, Austria',
         link: '',
-        alt: 'Location'
+        alt: 'Location',
       },
       {
         icon: '/icon-work.svg',
         description: 'Russmedia Digital',
         link: 'https://laendlepunkte.at',
-        alt: 'Work'
+        alt: 'Work',
       },
       {
         icon: '/icon-desktop.svg',
         description: 'Nuxt.js, Vue.js, Tailwindcss',
         link: '',
-        alt: 'Frontend Technologies'
+        alt: 'Frontend Technologies',
       },
       {
         icon: '/icon-application.svg',
         description: 'Laravel, Typescript, Go',
         link: '',
-        alt: 'Backend Technologies'
+        alt: 'Backend Technologies',
       },
       {
         icon: '/icon-database.svg',
         description: 'MySQL, SQLite, Crate.io, Hyperledger Fabric',
         link: '',
-        alt: 'Database Technologies'
+        alt: 'Database Technologies',
       },
       {
         icon: '/icon-server.svg',
         description: 'Kubernetes, Docker, Linux',
         link: '',
-        alt: ' Server Technologies'
-      }
-    ]
-  })
+        alt: ' Server Technologies',
+      },
+    ],
+  }),
 }
 </script>

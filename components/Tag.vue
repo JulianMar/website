@@ -17,27 +17,27 @@ export default {
   props: {
     icon: {
       type: String,
-      required: true
+      required: true,
     },
     description: {
       type: String,
-      required: true
+      required: true,
     },
     link: {
       type: String,
-      required: true
+      required: true,
     },
     alt: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
 
   computed: {
     linkSet() {
       return this.link !== ''
-    }
-  }
+    },
+  },
 }
 </script>
 

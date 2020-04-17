@@ -17,8 +17,8 @@ import Icons from '@/components/Icons'
 export default {
   components: {
     TitleCard,
-    Icons
-  }
+    Icons,
+  },
 }
 </script>
 

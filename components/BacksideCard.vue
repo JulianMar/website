@@ -34,22 +34,22 @@ export default {
       stack: [
         {
           url: 'https://laravel.com',
-          name: 'Laravel'
+          name: 'Laravel',
         },
         {
           url: 'https://nodejs.org',
-          name: 'nodejs'
+          name: 'nodejs',
         },
         {
           url: 'https://vuejs.org',
-          name: 'vue.js'
+          name: 'vue.js',
         },
         {
           url: 'https://nuxtjs.org',
-          name: 'nuxt.js'
-        }
-      ]
+          name: 'nuxt.js',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
