@@ -32,7 +32,7 @@
         ></Tag>
 
         <p class="text-purple-800 text-lg mt-4 text-center w-full">
-          Every error is a opportunity to learn something new
+          Every error is an opportunity to learn something new
         </p>
       </div>
     </div>
