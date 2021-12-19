@@ -3,7 +3,7 @@
     class="flex flex-col bg-white rounded-lg shadow-2xl background md:flex-row"
   >
     <img
-      class="w-1/2 mx-auto mt-4 rounded-full md:rounded-l-lg md:rounded-r-none md:m-0 md:w-4/12"
+      class="w-1/2 mx-auto mt-4 rounded-full h-2/5 aspect-square min-width-1/2 md:rounded-l-lg md:rounded-r-none md:m-0 md:w-4/12 md:h-full"
       src="/img/me_small.jpg"
       alt="picture of me"
       rel="preload"

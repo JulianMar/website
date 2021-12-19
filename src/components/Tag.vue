@@ -1,6 +1,6 @@
 <template>
   <div class="flex mt-4">
-    <img class="w-6 h-6" :src="icon" :alt="alt" />
+    <img class="w-6 h-6" :src="icon" :alt="alt" height="24px" width="24px" />
     <component
       :is="linkSet ? 'a' : 'p'"
       :href="link"
