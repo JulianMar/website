@@ -2,7 +2,7 @@
   <div>
     <div class="grid grid-cols-3 gap-2">
       <github class="w-10 h-10 hover:scale-125" />
-      <linked-in class="w-10 h-10 hover:scale-125" />
+      <linkedin class="w-10 h-10 hover:scale-125" />
       <lastfm class="w-10 h-10 hover:scale-125" />
     </div>
     <div class="hidden">
@@ -44,14 +44,14 @@
 
 <script lang="ts">
 import Github from "./icons/Github.vue";
-import LinkedIn from "./icons/LinkedIn.vue";
+import Linkedin from "./icons/Linkedin.vue";
 import Lastfm from "./icons/Lastfm.vue";
 import { defineComponent } from "@vue/runtime-core";
 
 export default defineComponent({
   components: {
     Github,
-    LinkedIn,
+    Linkedin,
     Lastfm,
   },
 });
