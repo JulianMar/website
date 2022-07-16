@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid grid-cols-3 gap-2">
+    <div class="grid grid-cols-3 gap-2 mx-auto justify-items-center">
       <github class="w-10 h-10 hover:scale-125" />
       <linkedin class="w-10 h-10 hover:scale-125" />
       <lastfm class="w-10 h-10 hover:scale-125" />
