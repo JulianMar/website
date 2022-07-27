@@ -32,7 +32,7 @@
         />
 
         <p class="w-full mt-4 text-lg text-center text-purple-600">
-          Every error is an opportunity to learn something new
+          Every bug is an opportunity to learn something new
         </p>
       </div>
     </div>
