@@ -22,14 +22,14 @@ export default defineComponent({
   },
   setup() {
     useHead({
-      title: "Julian Martin",
+      title: "Julian Martin | Software Developer | Vorarlberg | Austria",
       htmlAttrs: {
         lang: "en",
       },
       meta: [
         {
           name: "description",
-          content: "Hi, I am Julian Martin a Software Developer from Austria",
+          content: "Hi, I am Julian Martin a Software Developer from Vorarlberg, Austria. I am currently working at Russmedia and am Studying Digital Innovations at the FH Vorarlberg",
         },
       ],
     });
