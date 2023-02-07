@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   modules: ['nuxt-bugsnag'],
   bugsnag: {
-    publishRelease: true,
+    publishRelease: false,
     baseUrl: 'https://julian-martin.com',
     config: {
       apiKey: '317c3d7013a3dc4a9e152138bfe8c900',
