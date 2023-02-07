@@ -78,14 +78,14 @@ export default defineNuxtModule<ModuleOptions>({
             const promises: Promise<void>[] = [];
 
             // promises.push(
-            await node.uploadMultiple({
-              apiKey: options.config.apiKey!,
-              appVersion: options.config.appVersion,
-              directory: nitro.options.output.serverDir,
-              logger: nitro.logger,
-              overwrite: true,
-              projectRoot: options.projectRoot,
-            });
+            // await node.uploadMultiple({
+            //   apiKey: options.config.apiKey!,
+            //   appVersion: options.config.appVersion,
+            //   directory: nitro.options.output.serverDir,
+            //   logger: nitro.logger,
+            //   overwrite: true,
+            //   projectRoot: options.projectRoot,
+            // });
             // );
 
             nitro.logger.start(
