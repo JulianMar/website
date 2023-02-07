@@ -8,8 +8,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "nuxt": "3.0.0-rc.13",
+    "nuxt": "^3.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "nuxt-bugsnag": "^5.9.0"
   }
 }
