@@ -18,4 +18,5 @@ export default defineNuxtConfig({
       appVersion: '1.1',
     },
   },
+  sourcemap: { server: true, client: true },
 });
