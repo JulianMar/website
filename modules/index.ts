@@ -70,6 +70,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     nuxt.addHooks({
       'nitro:config': (config) => {
+        console.log(config.hooks);
         config.hooks = {
           compiled: async (nitro) => {
             nitro.logger.log(nitro);
