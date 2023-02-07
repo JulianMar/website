@@ -97,23 +97,23 @@ export default defineNuxtModule<ModuleOptions>({
             );
 
             // promises.push(
-            await browser.uploadMultiple({
-              apiKey: options.config.apiKey!,
-              appVersion: options.config.appVersion,
-              directory: nitro.options.output.publicDir,
-              logger: nitro.logger,
-              overwrite: true,
-              baseUrl: options.baseUrl,
-            });
-            // );
+            // await browser.uploadMultiple({
+            //   apiKey: options.config.apiKey!,
+            //   appVersion: options.config.appVersion,
+            //   directory: nitro.options.output.publicDir,
+            //   logger: nitro.logger,
+            //   overwrite: true,
+            //   baseUrl: options.baseUrl,
+            // });
+            // // );
 
-            nitro.logger.start(
-              'first upload done to' +
-                nitro.options.output.publicDir +
-                ' ' +
-                options.baseUrl +
-                ' \n'
-            );
+            // nitro.logger.start(
+            //   'first upload done to' +
+            //     nitro.options.output.publicDir +
+            //     ' ' +
+            //     options.baseUrl +
+            //     ' \n'
+            // );
 
             await Promise.all(promises);
 
