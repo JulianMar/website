@@ -70,58 +70,58 @@ export default defineNuxtModule<ModuleOptions>({
 
     nuxt.addHooks({
       'nitro:config': (config) => {
-        console.log(config.hooks);
-        config.hooks = {
-          compiled: async (nitro) => {
-            nitro.logger.log(nitro);
-            nitro.logger.log('');
-            nitro.logger.start('upload of sourcemaps to bugsnag \n');
-            const promises: Promise<void>[] = [];
+        console.log('hooooooooooks', config.hooks);
+        // config.hooks = {
+        //   compiled: async (nitro) => {
+        //     nitro.logger.log(nitro);
+        //     nitro.logger.log('');
+        //     nitro.logger.start('upload of sourcemaps to bugsnag \n');
+        //     const promises: Promise<void>[] = [];
 
-            // promises.push(
-            // await node.uploadMultiple({
-            //   apiKey: options.config.apiKey!,
-            //   appVersion: options.config.appVersion,
-            //   directory: nitro.options.output.serverDir,
-            //   logger: nitro.logger,
-            //   overwrite: true,
-            //   projectRoot: options.projectRoot,
-            // });
-            // );
+        //     // promises.push(
+        //     // await node.uploadMultiple({
+        //     //   apiKey: options.config.apiKey!,
+        //     //   appVersion: options.config.appVersion,
+        //     //   directory: nitro.options.output.serverDir,
+        //     //   logger: nitro.logger,
+        //     //   overwrite: true,
+        //     //   projectRoot: options.projectRoot,
+        //     // });
+        //     // );
 
-            nitro.logger.start(
-              'first upload done to' +
-                nitro.options.output.serverDir +
-                ' ' +
-                options.projectRoot +
-                ' \n'
-            );
+        //     nitro.logger.start(
+        //       'first upload done to' +
+        //         nitro.options.output.serverDir +
+        //         ' ' +
+        //         options.projectRoot +
+        //         ' \n'
+        //     );
 
-            // promises.push(
-            // await browser.uploadMultiple({
-            //   apiKey: options.config.apiKey!,
-            //   appVersion: options.config.appVersion,
-            //   directory: nitro.options.output.publicDir,
-            //   logger: nitro.logger,
-            //   overwrite: true,
-            //   baseUrl: options.baseUrl,
-            // });
-            // // );
+        //     // promises.push(
+        //     // await browser.uploadMultiple({
+        //     //   apiKey: options.config.apiKey!,
+        //     //   appVersion: options.config.appVersion,
+        //     //   directory: nitro.options.output.publicDir,
+        //     //   logger: nitro.logger,
+        //     //   overwrite: true,
+        //     //   baseUrl: options.baseUrl,
+        //     // });
+        //     // // );
 
-            // nitro.logger.start(
-            //   'first upload done to' +
-            //     nitro.options.output.publicDir +
-            //     ' ' +
-            //     options.baseUrl +
-            //     ' \n'
-            // );
+        //     // nitro.logger.start(
+        //     //   'first upload done to' +
+        //     //     nitro.options.output.publicDir +
+        //     //     ' ' +
+        //     //     options.baseUrl +
+        //     //     ' \n'
+        //     // );
 
-            await Promise.all(promises);
+        //     await Promise.all(promises);
 
-            nitro.logger.log('');
-            nitro.logger.success('upload of sourcemaps to bugsnag \n');
-          },
-        };
+        //     nitro.logger.log('');
+        //     nitro.logger.success('upload of sourcemaps to bugsnag \n');
+        //   },
+        // };
       },
     });
   },
