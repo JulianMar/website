@@ -72,6 +72,7 @@ export default defineNuxtModule<ModuleOptions>({
       'nitro:config': (config) => {
         config.hooks = {
           compiled: async (nitro) => {
+            nitro.logger.log(nitro);
             nitro.logger.log('');
             nitro.logger.start('upload of sourcemaps to bugsnag \n');
             const promises: Promise<void>[] = [];
