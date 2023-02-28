@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel',
   },
-  modules: ['./modules'],
+  modules: ['nuxt-bugsnag'],
   bugsnag: {
     publishRelease: true,
     baseUrl: 'https://julian-martin.com',
